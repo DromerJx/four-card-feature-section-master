@@ -1,0 +1,112 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --primary-1: hsl(0, 78%, 62%);
+    --primary-2: hsl(180, 62%, 55%);
+    --primary-3: hsl(34, 97%, 64%);
+    --primary-4: hsl(212, 86%, 64%);
+    --neutral-1: hsl(234, 12%, 34%);
+    --neutral-2: hsl(229, 6%, 66%);
+    --neutral-3: hsl(0, 0%, 98%);
+}
+*{
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: var(--neutral-3);
+}
+.visual{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    box-sizing: border-box;
+    padding: 60px 150px;
+}
+.side-description{
+    width: 100%;
+    text-align: center;
+}
+.side-description p:nth-child(1){
+    font-weight: 200;
+    font-size: 32px;
+    color: var(--neutral-1);
+}.side-description p:nth-child(2){
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--neutral-1);
+}.side-description p:nth-child(3){
+    font-weight: 400;
+    color: var(--neutral-2);
+    margin: 20px 0 50px 0;
+}
+.side-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.team-karma{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}.supervisor{
+    display: grid;
+    align-items: center;
+
+}.calculator{
+    display: grid;
+    align-items: center;
+
+}
+.card{
+    width: 100%;
+    height: 230px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 30px 40px;
+    box-shadow: 0px 15px 20px hsla(212, 86%, 64%, .1);
+}.card p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--neutral-1);
+}.card p:nth-child(2){
+    font-size: 13px;
+    color: var(--neutral-2);
+    margin: 15px 0;
+    line-height: 2;
+}
+.icon-card{
+    display: grid;
+    justify-content: end;
+}
+.card-supervisor{
+    border-top: 4px var(--primary-2) solid;
+}.card-team-builder{
+    border-top: 4px var(--primary-1) solid;
+}.card-karma{
+    border-top: 4px var(--primary-3) solid;
+}.card-calculator{
+    border-top: 4px var(--primary-4) solid;
+}
+@media (max-width: 375px) {
+    .visual{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+    .side-description p:nth-child(1){
+        font-size: 24px;
+    }.side-description p:nth-child(2){
+        font-size: 24px;
+    }.side-description p:nth-child(3){
+        margin-bottom: 70px;
+    }
+    .side-cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
